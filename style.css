@@ -1,0 +1,509 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(59, 58, 58);
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-bottom: 2px solid #ccc;
+}
+
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 5rem;
+}
+
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar li {
+  position: relative;
+  margin-top: 0.6rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: gray;
+}
+
+
+.navbar li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #e85b04e7;
+  transition: width 0.3s;
+}
+
+.navbar li a:hover::after {
+  width: 70%;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgb(59, 58, 58);
+  min-width: 150px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  padding: 10px 0;
+}
+
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.dropdown-menu li {
+  padding: 8px 20px;
+}
+
+.dropdown-menu li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #444;
+  color: #e85b04e7;
+}
+
+
+.dropdown-icon {
+  margin-left: 6px;
+  font-size: 10px;
+  transition: transform 0.3s ease;
+}
+
+
+.dropdown:hover .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+
+button {
+  background-color: rgb(59, 58, 58);
+  color: #fff;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #fff;
+  color: rgb(59, 58, 58);
+}
+.kill {
+  width: 100%;
+}
+.kill img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; 
+}
+main{
+  background-image: url(img/666764a17c17fb0ff66b9f43_phases_of_construction_projects.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.git {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  color: #fff;
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+  font-family: poppins ;
+}
+.git p{
+  font-size: 20px;
+  margin-top: 1rem;
+  font-weight: 600;
+  font-family: poppins , sans-serif;
+  font-style: bold;
+}
+.hero-buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-skyblue {
+  background-color: #181f21;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-skyblue:hover {
+  background-color: #484b4d;
+  color: #fff;
+}
+
+.btn-white {
+  background-color: white;
+  color: #0f1517;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-white:hover {
+  background-color: #202a2e;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .logo {
+    margin-left: 0;
+    font-size: 26px;
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .navbar li {
+    margin-top: 0;
+  }
+
+  .navbar a {
+    font-size: 16px;
+    padding: 5px 0;
+  }
+
+  button {
+    align-self: flex-start;
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 22px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+    width: 100%;
+    max-width: none;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(59, 58, 58);
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-bottom: 2px solid #ccc;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar li {
+  position: relative;
+  margin-top: 0.6rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: gray;
+}
+
+.navbar li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #e85b04e7;
+  transition: width 0.3s;
+}
+
+.navbar li a:hover::after {
+  width: 70%;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgb(59, 58, 58);
+  min-width: 150px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  padding: 10px 0;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-menu li {
+  padding: 8px 20px;
+}
+
+.dropdown-menu li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #444;
+  color: #e85b04e7;
+}
+
+.dropdown-icon {
+  margin-left: 6px;
+  font-size: 10px;
+  transition: transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+button {
+  background-color: rgb(59, 58, 58);
+  color: #fff;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #fff;
+  color: rgb(59, 58, 58);
+}
+
+.git {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('img/666764a17c17fb0ff66b9f43_phases_of_construction_projects.webp');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.git p {
+  font-size: 20px;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.hero-buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-skyblue {
+  background-color: #181f21;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-skyblue:hover {
+  background-color: #484b4d;
+  color: #fff;
+}
+
+.btn-white {
+  background-color: white;
+  color: #0f1517;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-white:hover {
+  background-color: #202a2e;
+  color: white;
+}
+
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+section p, section li {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+section ul {
+  list-style-type: square;
+  text-align: left;
+  margin-left: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  button {
+    align-self: flex-start;
+  }
+}
